@@ -1,7 +1,7 @@
 Пользовательская прошивка для всех Antminer серии S19 без DevFee
 =============
 
-СКАЧАТЬ АРХИВ ПРОШИВКИ https://disk.yandex.ru/d/ywkAz9AafkYzqg
+✅СКАЧАТЬ АРХИВ ПРОШИВКИ https://disk.yandex.ru/d/ywkAz9AafkYzqg
 
 Setup instructoins https://vnish.pro/ru/documentation/64-install-vnish-firmware.html
 ------------------
