@@ -3,21 +3,20 @@
 
 ✅СКАЧАТЬ АРХИВ ПРОШИВКИ https://disk.yandex.ru/d/ywkAz9AafkYzqg
 
-🤖Setup instructoins https://vnish.pro/ru/documentation/64-install-vnish-firmware.html
+🤖Инструкции по установке https://vnish.pro/ru/documentation/64-install-vnish-firmware.html
 ------------------
 
-To build a bitmainer miner firmware, first prepare a build machine as per OpenEmbedded Required software instructions at http://www.openembedded.org/wiki/Getting_started
+TЧтобы собрать прошивку для майнера bitmainer, сначала подготовьте сборочный компьютер в соответствии с инструкциями по установке необходимого программного обеспечения OpenEmbedded на http://www.openembedded.org/wiki/Getting_started
 
-When machine is prepared proceed to prepare the bitmainer firmware build by running
-
+После подготовки компьютера приступайте к сборке прошивки bitmainer.
     git clone git@github.com:bitmaintech/Antminer_firmware.git
     cd antminer_firmware
     MACHINE=beaglebone ./oebb.sh config beaglebone
 
-Rootfs build instructions
+Инструкции по сборке Rootfs
 ----------------------------------
 
-To build the firmware rootfs run
+Чтобы собрать корневую файловую систему прошивки, выполните команду
 
     . environment-angstrom-v2013.06
     bitbake bitmainer
