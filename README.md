@@ -3,7 +3,7 @@
 
 ✅СКАЧАТЬ АРХИВ ПРОШИВКИ https://disk.yandex.ru/d/ywkAz9AafkYzqg
 
-Setup instructoins https://vnish.pro/ru/documentation/64-install-vnish-firmware.html
+🤖Setup instructoins https://vnish.pro/ru/documentation/64-install-vnish-firmware.html
 ------------------
 
 To build a bitmainer miner firmware, first prepare a build machine as per OpenEmbedded Required software instructions at http://www.openembedded.org/wiki/Getting_started
