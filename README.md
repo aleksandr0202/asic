@@ -44,7 +44,8 @@ which results in a kernel image at
     antminer_firmware/deploy/eglibc/images/beaglebone/
 
 -----------------------------------
-
+License с ограничениями
+==========================
 РАЗРЕШЕНО:
 ✅ Личное использование в образовательных целях
 ✅ Модификация исходного кода
