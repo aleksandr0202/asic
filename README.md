@@ -1,45 +1,44 @@
-# asic Antminer S19 Series
-https://disk.yandex.ru/d/ywkAz9AafkYzqg
-Кастомная прошивка для всей модели Antminer S19 Series Firmware без DevFee
-Наша команда пошла таким путем руководствуясь очень простой логикой и здравым смыслом. Да, мы согласны, действительно разработчик любого программного обеспечения тратит некоторое количество времени и сил, для того, чтобы создать подобный программный продукт - и за это пользователь этого продукта должен заплатить. Но мы категорически не согласны с тем, что пользователь должен платить за использование продукта вечно, делая из пользователей вечную дойную корову. Тем более за такие %%.
-Это то же самое, что и "бесплатный софт", который обходится в десятки и сотни раз дороже платного. Навряд ли бы Вы согласились платить за вчера купленный свежий багет 10 рубль ежемесячно на протяжении всей Вашей жизни
-  ПЕРЕД ОБНОВЛЕНИЕМ ПРОШИВКИ убедитесь, что тип майнера и тип прошивки совпадают.
-                  
-                            В папке usr/share/dashd/ui/assets файл index-bI что то там.js
+meta-bitmainer
+=============
 
-                                  пихаешь код из этого (да и вообще из всех наверно) в https://lelinhtinh.github.io/de4js/
+OpenEmbedded / Ångström meta layer for bitminer Miner
 
-                                          строчке на +-230 там объект devfee с полями 2: "2", 4: "4",
- 
-Ограничения по размеру файла
-GitHub ограничивает размер файлов, которые можно хранить в репозиториях. Если вы попытаетесь добавить или обновить файл размером более 50 МБ, Git выдаст предупреждение. Изменения все равно будут успешно отправлены в ваш репозиторий, это для того  чтобы снизить нагрузку на систему
+Setup instructoins
+------------------
 
-Инструкции по настройке
+To build a bitmainer miner firmware, first prepare a build machine as per OpenEmbedded Required software instructions at http://www.openembedded.org/wiki/Getting_started
 
-Чтобы собрать прошивку для майнера bitmainer, сначала подготовьте сборочный компьютер в соответствии с инструкциями по установке необходимого программного обеспечения OpenEmbedded на http://www.openembedded.org/wiki/Getting_started
+When machine is prepared proceed to prepare the bitmainer firmware build by running
 
-После подготовки компьютера приступайте к сборке прошивки bitmainer.
+    git clone git@github.com:bitmaintech/Antminer_firmware.git
+    cd antminer_firmware
+    MACHINE=beaglebone ./oebb.sh config beaglebone
 
-git clone git@github.com:bitmaintech/Antminer_firmware.git
-cd antminer_firmware
-MACHINE=beaglebone ./oebb.sh config beaglebone
-Инструкции по сборке Rootfs
-Чтобы собрать корневую файловую систему прошивки, выполните команду
+Rootfs build instructions
+----------------------------------
 
-. environment-angstrom-v2013.06
-bitbake bitmainer
-а затем подождите, пока сборка завершится.
+To build the firmware rootfs run
 
-Примечание: вам потребуется около 11 ГБ свободного места на диске.
+    . environment-angstrom-v2013.06
+    bitbake bitmainer
 
-Полученный корневой initramfs будет находиться в
+and then wait for quite a bit for the build to complete.
 
-antminer_firmware/deploy/eglibc/images/beaglebone/Angstrom-bitmainer-eglibc-ipk-v2013.06-beaglebone.rootfs.cpio.gz.u-boot
-Инструкции по сборке ядра
-Чтобы создать образ ядра Linux, выполните команду
+Note: You will need ~11GB free disk space.
 
-. environment-angstrom-v2013.06
-bitbake virtual/kernel
-В результате получается изображение ядра
+The resulting root initramfs will be in
 
-antminer_firmware/deploy/eglibc/images/beaglebone/
+    antminer_firmware/deploy/eglibc/images/beaglebone/Angstrom-bitmainer-eglibc-ipk-v2013.06-beaglebone.rootfs.cpio.gz.u-boot
+
+
+Kernel build instructions
+-----------------------------------
+
+To build the Linux kernel image run
+
+    . environment-angstrom-v2013.06
+    bitbake virtual/kernel
+
+which results in a kernel image at
+
+    antminer_firmware/deploy/eglibc/images/beaglebone/
