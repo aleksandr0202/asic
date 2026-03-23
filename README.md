@@ -19,8 +19,8 @@
 
 Чтобы собрать корневую файловую систему прошивки, выполните команду
 
-    environment-angstrom-v2013.06
-    bitbake bitmainer
+    . environment-angstrom-v2013.06
+    bitbake virtual/kernel
 
 В результате получается изображение ядра
 
