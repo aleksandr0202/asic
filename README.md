@@ -2,7 +2,6 @@
 =============
 
 СКАЧАТЬ АРХИВ ПРОШИВКИ https://disk.yandex.ru/d/ywkAz9AafkYzqg
-Перед установкой выберете нужную вами модель
 
 Setup instructoins https://vnish.pro/ru/documentation/64-install-vnish-firmware.html
 ------------------
