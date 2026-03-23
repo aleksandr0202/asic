@@ -43,7 +43,6 @@ which results in a kernel image at
 
     antminer_firmware/deploy/eglibc/images/beaglebone/
 
-    Copyright (c) 2026 VPN VLESS Configs Russia
 -----------------------------------
 
 РАЗРЕШЕНО:
@@ -60,5 +59,4 @@ which results in a kernel image at
 ⚠️ Действия пользователей
 ⚠️ Нарушение законодательства
 ⚠️ Утечки данных
-⚠️ Блокировки провайдерами
 -----------------------------------
