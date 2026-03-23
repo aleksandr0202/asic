@@ -1,7 +1,7 @@
 Пользовательская прошивка для Antminer серии S19 без DevFee
 =============
 
-OpenEmbedded / Ångström meta layer for bitminer Miner
+https://disk.yandex.ru/d/ywkAz9AafkYzqg
 
 Setup instructoins
 ------------------
